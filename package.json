@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "A minimal spa setup using typescript, preact, and parceljs",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html",
