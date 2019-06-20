@@ -1,5 +1,14 @@
-import { h, render } from 'preact';
+import './style.css';
 
-const App = () => <h1>Hello World</h1>;
+import { h, render } from 'preact';
+import { environment, version } from '~environments';
+
+const App = () => (
+  <main>
+    <h1 class="red">Hello World</h1>
+    <p>Version: {version}</p>
+    <p>Environment: {JSON.stringify(environment)}</p>
+  </main>
+);
 
 render(<App />, document.body);
