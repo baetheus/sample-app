@@ -1,14 +1,15 @@
-import './style.css';
-
 import { h, render } from 'preact';
-import { environment, version } from '~environments';
+import { Router } from 'preact-router';
+import { Home } from '~/routes/Home';
+import { Item } from '~/routes/Item';
+import { Test } from '~/routes/Test';
 
 const App = () => (
-  <main>
-    <h1 class="red">Hello World</h1>
-    <p>Version: {version}</p>
-    <p>Environment: {JSON.stringify(environment)}</p>
-  </main>
+  <Router>
+    <Home path="/home" />
+    <Item path="/item/:id" />
+    <Test default />
+  </Router>
 );
 
 render(<App />, document.body);
