@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/baetheus/sample-app/compare/v1.1.0...v1.2.0) (2019-08-08)
+
+
+### Features
+
+* removed Test route and added NotFound route as default ([14df5cd](https://github.com/baetheus/sample-app/commit/14df5cd))
+
 ## [1.1.0](https://github.com/baetheus/sample-app/compare/v1.0.2...v1.1.0) (2019-08-08)
 
 
